@@ -16,7 +16,6 @@
   },
   "license": "MIT",
   "author": "azu",
-  "main": "lib/monorepo-sandbox.js",
   "directories": {
     "lib": "lib",
     "test": "test"
