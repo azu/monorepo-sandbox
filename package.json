@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "name": "monorepo-sandbox",
+  "version": "1.0.0",
+  "description": "monorepo sandbox",
+  "keywords": [
+    "monorepo"
+  ],
+  "homepage": "https://github.com/azu/monorepo-sandbox",
+  "bugs": {
+    "url": "https://github.com/azu/monorepo-sandbox/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/monorepo-sandbox.git"
+  },
+  "license": "MIT",
+  "author": "azu",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "main": "lib/monorepo-sandbox.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "^3.8.1"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
