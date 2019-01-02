@@ -27,7 +27,12 @@
     "test": "test"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap"
+    "bootstrap": "lerna bootstrap",
+    "version": "lerna version --conventional-commits",
+    "version:patch": "lerna version patch --conventional-commits",
+    "version:minor": "lerna version minor --conventional-commits",
+    "version:major": "lerna version minor --conventional-commits",
+    "publish": "lerna publish from-package"
   },
   "devDependencies": {
     "lerna": "^3.8.1"

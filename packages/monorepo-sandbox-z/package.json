@@ -18,5 +18,8 @@
   },
   "scripts": {
 
+  },
+  "dependencies": {
+    "@azu/monorepo-sandbox-y": "^0.0.0"
   }
 }
