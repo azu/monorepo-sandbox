@@ -1,6 +1,6 @@
 # `monorepo-sandbox-x`
 
-x is package.
+x is package.-
 
 ## Usage
 
