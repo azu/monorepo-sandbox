@@ -1,6 +1,6 @@
 {
   "name": "monorepo-sandbox-x",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "[example] x package",
   "author": "azu <azuciao@gmail.com>",
   "homepage": "https://github.com/azu/monorepo-sandbox/tree/master/packages/monorepo-sandbox-x#readme",
@@ -13,9 +13,7 @@
   "files": [
     "lib"
   ],
-  "scripts": {
-
-  },
+  "scripts": {},
   "publishConfig": {
     "access": "public"
   }
