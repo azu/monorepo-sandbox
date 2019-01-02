@@ -22,7 +22,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "push:current": "git push origin HEAD",
+    "push:current": "git push origin HEAD -u",
     "versionup": "npm run push:current && lerna version --conventional-commits",
     "versionup:patch": "npm run push:current && lerna version patch --conventional-commits",
     "versionup:minor": "npm run push:current && lerna version minor --conventional-commits",
