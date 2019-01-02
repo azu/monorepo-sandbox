@@ -1,6 +1,6 @@
 {
   "name": "@azu/monorepo-sandbox-y",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "[example] y is package",
   "author": "azu <azuciao@gmail.com>",
   "homepage": "https://github.com/azu/monorepo-sandbox/tree/master/packages/monorepo-sandbox-y#readme",
@@ -18,6 +18,6 @@
   },
   "scripts": {},
   "dependencies": {
-    "monorepo-sandbox-x": "^0.1.0"
+    "monorepo-sandbox-x": "^0.2.0"
   }
 }
