@@ -33,7 +33,7 @@ jobs:
       - name: publish
         run: |
           npx lerna exec -- echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
-          npx lerna publish patch --yes --force-publish
+          npx lerna publish patch --yes --force-publish --no-verify-access
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
