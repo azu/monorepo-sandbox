@@ -33,7 +33,6 @@ jobs:
       - name: publish
         run: |
           npx lerna publish patch --yes --force-publish --registry https://npm.pkg.github.com/
-
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
