@@ -32,6 +32,7 @@ jobs:
         run: yarn install
       - name: publish
         run: |
-          npx lerna publish patch --yes --force-publish --registry https://npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+          npx lerna publish patch --yes --force-publish --registry https://npm.pkg.github.com/
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
