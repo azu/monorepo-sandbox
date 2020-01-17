@@ -14,6 +14,15 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v1
+        # require for git push
+      - name: Git Identity
+        run: |
+          git config --global user.email "azu.no-reply@github.com"
+          git config --global user.name "github-actions"
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${$GITHUB_REPOSITORY}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ GITHUB_REPOSITORY }}
       - name: setup Node
         uses: actions/setup-node@v1
         with:
@@ -23,4 +32,6 @@ jobs:
         run: yarn install
       - name: publish
         run: |
-          npx lerna publish patch --yes --force-publish
+          npx lerna publish patch --yes --force-publish --registry https://npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,5 +1,5 @@
 {
-  "name": "monorepo-sandbox-x",
+  "name": "@azu/monorepo-sandbox-x",
   "version": "0.2.1",
   "description": "[example] x package",
   "homepage": "https://github.com/azu/monorepo-sandbox/tree/master/packages/monorepo-sandbox-x#readme",
@@ -15,7 +15,7 @@
   },
   "scripts": {},
   "publishConfig": {
-    "access": "public",
+    "access": "restricted",
     "registry": "https://npm.pkg.github.com/"
   }
 }
