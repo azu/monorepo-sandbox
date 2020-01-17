@@ -32,8 +32,8 @@ jobs:
         run: yarn install
       - name: publish
         run: |
-          echo "//npm.pkg.github.com:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
-          npx lerna publish patch --yes --force-publish
+          echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
+          ./node_modules/.bin/lerna publish patch --yes --force-publish
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
