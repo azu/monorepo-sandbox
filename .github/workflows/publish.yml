@@ -22,7 +22,7 @@ jobs:
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ GITHUB_REPOSITORY }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
       - name: setup Node
         uses: actions/setup-node@v1
         with:
