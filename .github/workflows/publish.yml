@@ -17,12 +17,11 @@ jobs:
         # require for git push
       - name: Git Identity
         run: |
-          git config --global user.email "azu.no-reply@github.com"
-          git config --global user.name "github-actions"
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
+          git config --global user.name '@azu'
+          git config --global user.email 'azu@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
       - name: setup Node
         uses: actions/setup-node@v1
         with:
