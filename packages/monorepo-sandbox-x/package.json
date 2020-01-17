@@ -2,6 +2,11 @@
   "name": "@azu/monorepo-sandbox-x",
   "version": "0.2.12",
   "description": "[example] x package",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/azu/monorepo-sandbox.git",
+    "directory": "packages/monorepo-sandbox-x"
+  },
   "homepage": "https://github.com/azu/monorepo-sandbox/tree/master/packages/monorepo-sandbox-x#readme",
   "license": "MIT",
   "author": "azu <azuciao@gmail.com>",
@@ -16,6 +21,6 @@
   "scripts": {},
   "publishConfig": {
     "access": "public",
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com"
   }
 }
