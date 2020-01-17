@@ -19,7 +19,7 @@ jobs:
         run: |
           git config --global user.email "azu.no-reply@github.com"
           git config --global user.name "github-actions"
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${$GITHUB_REPOSITORY}
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ GITHUB_REPOSITORY }}
