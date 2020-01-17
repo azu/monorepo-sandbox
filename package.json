@@ -30,7 +30,7 @@
     "publish": "lerna publish from-package"
   },
   "devDependencies": {
-    "lerna": "^3.8.1"
+    "lerna": "^3.20.2"
   },
   "workspaces": {
     "packages": [
