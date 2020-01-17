@@ -1,6 +1,6 @@
 {
   "name": "@azu/monorepo-sandbox-y",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "[example] y is package",
   "homepage": "https://github.com/azu/monorepo-sandbox/tree/master/packages/monorepo-sandbox-y#readme",
   "license": "MIT",
