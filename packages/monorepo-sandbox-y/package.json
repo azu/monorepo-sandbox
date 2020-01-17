@@ -18,7 +18,7 @@
     "monorepo-sandbox-x": "^0.2.1"
   },
   "publishConfig": {
-    "access": "restricted",
+    "access": "public",
     "registry": "https://npm.pkg.github.com/"
   }
 }
