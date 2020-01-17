@@ -22,7 +22,5 @@ jobs:
       - name: install
         run: yarn install
       - name: publish
-        run:
-          name: Publish
-          command:
-            npx lerna publish patch --yes --force-publish
+        run: |
+          npx lerna publish patch --yes --force-publish
