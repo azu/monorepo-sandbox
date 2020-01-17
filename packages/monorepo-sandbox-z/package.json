@@ -1,6 +1,6 @@
 {
   "name": "@azu/monorepo-sandbox-z",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "description": "[example] z is packages",
   "homepage": "https://github.com/azu/monorepo-sandbox/tree/master/packages/monorepo-sandbox-z#readme",
   "license": "MIT",
@@ -15,7 +15,7 @@
   },
   "scripts": {},
   "dependencies": {
-    "@azu/monorepo-sandbox-y": "^0.2.10"
+    "@azu/monorepo-sandbox-y": "^0.2.11"
   },
   "publishConfig": {
     "access": "public",
