@@ -27,7 +27,7 @@
     "versionup:patch": "npm run push:current && lerna version patch --conventional-commits",
     "versionup:minor": "npm run push:current && lerna version minor --conventional-commits",
     "versionup:major": "npm run push:current && lerna version minor --conventional-commits",
-    "publish": "lerna publish from-package"
+    "release": "lerna publish from-package"
   },
   "devDependencies": {
     "lerna": "^3.20.2"
