@@ -3,9 +3,7 @@
   "name": "monorepo-sandbox",
   "version": "1.0.0",
   "description": "monorepo sandbox",
-  "keywords": [
-    "monorepo"
-  ],
+  "keywords": ["monorepo"],
   "homepage": "https://github.com/azu/monorepo-sandbox",
   "bugs": {
     "url": "https://github.com/azu/monorepo-sandbox/issues"
@@ -27,14 +25,15 @@
     "versionup:patch": "npm run push:current && lerna version patch --conventional-commits",
     "versionup:minor": "npm run push:current && lerna version minor --conventional-commits",
     "versionup:major": "npm run push:current && lerna version minor --conventional-commits",
-    "release": "lerna publish from-package"
+    "release": "lerna publish from-package",
+    "release:prepare": "shipjs prepare",
+    "release:trigger": "shipjs trigger"
   },
   "devDependencies": {
-    "lerna": "^3.20.2"
+    "lerna": "^3.20.2",
+    "shipjs": "0.16.0"
   },
   "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
+    "packages": ["packages/*"]
   }
 }
