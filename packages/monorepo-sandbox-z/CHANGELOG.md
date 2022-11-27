@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.4](https://github.com/azu/monorepo-sandbox/compare/v1.5.2...v1.5.4) (2022-11-27)
+
+**Note:** Version bump only for package @azu/monorepo-sandbox-z
+
+
+
+
+
 ## [0.2.1](https://github.com/azu/monorepo-sandbox/compare/@azu/monorepo-sandbox-z@0.2.0...@azu/monorepo-sandbox-z@0.2.1) (2019-01-02)
 
 **Note:** Version bump only for package @azu/monorepo-sandbox-z
